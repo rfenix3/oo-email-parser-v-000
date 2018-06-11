@@ -14,7 +14,7 @@ class EmailParser
   
   def parse
     if @emails.split(', ').length  < 1 
-      @emails.split
+      @emails.split(', ')
     else
       @emails.split
     end
