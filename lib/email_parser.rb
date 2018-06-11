@@ -13,10 +13,8 @@ class EmailParser
   
   
   def parse
-    if @emails.split(', ').length  <= 1 
-      @emails.split.uniq
-    else
-      @emails.split(', ').uniq
-    end
+    temp = @emails.split(/[\s,]/).uniq
+    temp -= [nil, '']
+
   end
 end
