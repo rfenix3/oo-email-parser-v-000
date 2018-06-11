@@ -16,7 +16,7 @@ class EmailParser
     if @emails.split(', ').length  < 1 
       @emails.split
     else
-      @emails.split(', ')
+      @emails.split
     end
   end
 end
