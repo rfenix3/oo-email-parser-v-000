@@ -13,8 +13,10 @@ class EmailParser
   
   
   def parse
-    if @emails.split(', ')  < 1 || @emails.split
-      
+    if @emails.split(', ')  < 1 
+      @emails.split
+    else
+      @emails.split(', ')
     end
   end
 end
